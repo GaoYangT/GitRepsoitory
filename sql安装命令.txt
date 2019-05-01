@@ -1,0 +1,17 @@
+1.解压软件
+2.将解压后的mysql5.7复制道mysql文件夹下
+3.将my-default.ini文件复制到mysql-5.7.19-winx64下
+4.点开mysql-5.7.19-winx64文件夹下的my-default.ini文件
+5.mysql-5.7.19-winx64文件夹下新建一个data文件夹
+6.修改my-default.ini里面的basedir，datadir
+7.配置环境变量
+  找到path 配置D:\java\mysql\mysql-5.7.19-winx64\bin
+8.cmd（用管理员身份）
+  d:
+  cd D:\java\mysql\mysql-5.7.19-winx64\bin
+  mysqld --initialize-insecure --user=mysql（初始化数据库）
+  mysqld --install
+  net start mysql
+
+ cmd
+ mysql -u root -p
